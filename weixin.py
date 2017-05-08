@@ -641,8 +641,8 @@ class WebWeixin(object):
                     if srcName in HAHA_CONTACTS or groupName in HAHA_GROUPS:
 
                         # ans = self._xiaodoubi(content)+'\n[微信机器人自动回复]'
-                        if '哈哈' in content:
-                            ans = '哈' * (content.count('哈') + 1)
+                        if '啪啪' in content:
+                            ans = '啪' * (content.count('啪') + 1)
                             if self.webwxsendmsg(ans, msg['FromUserName']):
                                 print '自动回复: '+ans
                                 logging.info('自动回复: '+ans)
